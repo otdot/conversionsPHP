@@ -13,8 +13,17 @@
     <?php include "./header.php" ?>
     <?php include "./conversionsKGTEMP.php" ?>
     <?php
-        $from = $_GET["from"];
-        switch ($_GET["fromTo"]) {
+        if (isset($_GET["from"])) {
+            $from = $_GET["from"];
+        }else {
+            $from = 0;
+        };
+        if (isset($_GET["fromTo"])) {
+            $fromTo = $_GET["fromTo"];
+        }else {
+            $fromTo = "null";
+        };
+        switch ($fromTo) {
             case "KGG":
                 echo "<p>" . $from * 1000 . "</p>";
                 break;
@@ -34,7 +43,7 @@
                 echo "<p>" . ($from / 1.852)  . "</p>";
                 break;
             default:
-                "<p> could not make that conversion </p>";
+                "<p> Convert something! </p>";
                 break;
         }
     ?>

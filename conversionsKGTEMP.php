@@ -1,4 +1,5 @@
     <form action="index.php" method="GET">
+        <label for="fromTo">Choose conversion type:</label>
         <select name="fromTo" id="fromTo" value="Select conversion">
             <option value="KGG">From Kilograms to Grams</option>
             <option value="GKG">From Grams to Kilograms</option>

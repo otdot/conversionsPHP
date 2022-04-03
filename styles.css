@@ -5,7 +5,7 @@
 
 body {
   background-color: rgba(74, 166, 241, 0.753);
-  width: 60%;
+  width: 50%;
   height: calc(100vh - 25px);
   margin: auto;
   position: relative;
@@ -22,6 +22,7 @@ form {
   display: flex;
   flex-direction: column;
   height: 300px;
+  margin-top: 75px;
 }
 
 select,

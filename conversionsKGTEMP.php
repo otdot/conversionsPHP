@@ -9,6 +9,6 @@
             <option value="MTR">From Meters to Knots</option>
         </select>
         <label for="from">Type value here: </label>
-        <input name="from" id="from" value="0" type="number">
+        <input name="from" id="from" value="" type="number">
         <button type="submit">CONVERT</button>
     </form>

@@ -23,22 +23,22 @@
         };
         switch ($fromTo) {
             case "KGG":
-                echo "<p>" . $from * 1000 . "</p>";
+                echo "<p>Converted " . $_GET["from"] . " " . "Kilograms to Grams</p>" . "<br>" . "<p>" . $from * 1000 . "</p>";
                 break;
             case "GKG":
-                echo "<p>" . $from / 1000 . "</p>";
+                echo "<p>Converted " . $_GET["from"] . " " .  "Grams to Kilograms</p>" . "<br>" ."<p>" . $from / 1000 . "</p>";
                 break;
             case "CF":
-                echo "<p>" . (($from * 9 /5) + 32) . "</p>";
+                echo "<p>Converted " . $_GET["from"] . " " .  " Celsius to Farenheit</p>" . "<br>" ."<p>" . (($from * 9 /5) + 32) . "</p>";
                 break;
             case "FC":
-                echo "<p>" . (($from - 32) * 5 / 9)  . "</p>";
+                echo "<p>Converted " . $_GET["from"] . " " .  " Farenheit to Celsuis</p>" . "<br>" . "<p>" . (($from - 32) * 5 / 9)  . "</p>";
                 break;
             case "KLM":
-                echo "<p>" . ($from  / 3.6)  . "</p>";
+                echo "<p>Converted " . $_GET["from"] . " " .  " Kilometers to Meters</p>" . "<br>" . "<p>" . ($from  / 3.6)  . "</p>";
                 break;
             case "MTR":
-                echo "<p>" . ($from / 1.852)  . "</p>";
+                echo "<p>Converted " . $_GET["from"] . " " .  " Meters to Knots</p>" . "<br>" . "<p>" . ($from / 1.852)  . "</p>";
                 break;
             default:
                 "<p> Convert something! </p>";
